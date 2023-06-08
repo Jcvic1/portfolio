@@ -1,0 +1,9 @@
+
+.nav-pills .nav-link.grey.active , .nav-pills.grey .show >.nav-link   {
+    color:whitesmoke;
+    background-color: rgb(137, 137, 137);
+  }
+  .nav .grey{
+    --bs-nav-link-color: rgb(137, 137, 137);
+    --bs-nav-link-hover-color: rgb(86, 86, 86);
+  }
