@@ -35,3 +35,23 @@ navLinks.forEach(link => {
     });
   });
 });
+
+
+
+// Animation control scroll to view
+
+const animateElements = document.querySelectorAll('.animated');
+
+animateElements.forEach(animate => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const animation = animate.getAttribute('data-animation');
+        animate.classList.add('animate', animation);
+        observer.unobserve(animate);
+      }
+    });
+  });
+
+  observer.observe(animate);
+});

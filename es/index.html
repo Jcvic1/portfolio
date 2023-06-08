@@ -20,7 +20,7 @@
     <header class=" sticky-top bg-secondary">
       <div class="container-xl">
       <div class="d-flex justify-content-between pt-3">
-        <div class="fs-3">Obobo Victor</div>
+        <div class="fs-3 animated" data-animation="bounce-left">Obobo Victor</div>
         <div class="d-flex ">
           <div class="dropdown">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #adb5bd;">
@@ -44,16 +44,16 @@
 
         <div class="d-flex ms-auto">
 
-          <a class="nav-link m-2" href="#home">Home
+          <a class="nav-link m-2 btn p-1 rounded-pill" href="#home">Home
           </a>
 
-          <a class="nav-link m-2" href="#expertise">Expertise
+          <a class="nav-link m-2 btn p-1 rounded-pill" href="#expertise">Expertise
           </a>
 
-          <a class="nav-link m-2" href="#projects">Projects
+          <a class="nav-link m-2 btn p-1 rounded-pill" href="#projects">Projects
           </a>
 
-          <a class="nav-link m-2" href="#contacts">Contact
+          <a class="nav-link m-2 btn p-1 rounded-pill" href="#contacts">Contact
           </a>
 
         </div>
@@ -62,6 +62,12 @@
     </header>
     
     <main>
+
+
+
+      <!-- HOME -->
+  
+  
       <section id="home" class="container-xl">
         <div class="">
         <div class="container">
@@ -86,8 +92,16 @@
         </div>
       </div>
       </section>
+  
+  
+  
+      <!-- EXPERTISE -->
+  
+  
+  
+  
       <section id="expertise" class="my-5">
-        <h2 class="text-center">EXPERTISE</h2>
+        <h2 class="animated text-center" data-animation="tracking-in-contract-bck">EXPERTISE</h2>
         <div class=" bg-secondary">
   
           <div class="container-xl py-5">
@@ -118,8 +132,14 @@
   
       </section>
   
+  
+  
+      <!-- PROJECTS -->
+  
+  
+  
       <section id="projects" class="my-5 container-xl">
-        <h2 class="text-center my-3">PROJECTS</h2>
+        <h2 class="animated text-center my-3" data-animation="tracking-in-contract-bck">PROJECTS</h2>
   
         <div class=" my-1 d-flex justify-content-center">
   
@@ -147,11 +167,18 @@
         </ul>
         </div>
         <div class="tab-content" id="pills-tabContent">
+  
+  
+          <!-- Websites -->
+  
           <div class="tab-pane fade show active" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab"
             tabindex="0">
   
             <div class="container">
               <div class="row">
+  
+        
+  
                 <div class="col-sm-12 col-lg-6 my-3">
                   <div class="card border-0 ">
                     <div id="website-one" class="carousel slide m-2" data-bs-ride="carousel">
@@ -200,6 +227,8 @@
                   </div>
                 </div>
   
+                
+  
                 <div class="col-sm-12 col-lg-6 my-3">
                   <div class="card border-0">
                     <div id="website-two" class="carousel slide m-2" data-bs-ride="carousel">
@@ -247,10 +276,71 @@
                   </div>
                 </div>
   
+  
+  
+  
+  
+                <div class="col-sm-12 col-lg-6 my-3">
+                  <div class="card border-0">
+                    <div id="website-two" class="carousel slide m-2" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../images/portfolio/127.0.0.1_5500_index.html(Nest Hub Max) (1).png"
+                            style="max-height: 50vh;" class="d-block m-auto border rounded" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../images/portfolio/127.0.0.1_5500_index.html(iPhone 12 Pro).png"
+                            style="max-height: 50vh;" class="d-block m-auto border rounded" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../images/portfolio/127.0.0.1_5500_index.html(Nest Hub Max).png"
+                            style="max-height: 50vh;" class="d-block m-auto border rounded" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#website-two"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#website-two"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+  
+                    <div class="card-body">
+                      <h5 class="card-title my-2">Website</h5>
+                      <h6 class="card-title my-3">Skills Used</h6>
+                      <p class="card-text">
+                        <div class="my-1 text-center p-2 bg-secondary rounded-pill">HTML</div>
+                        <div class="my-1 text-center p-2 bg-secondary rounded-pill">CSS</div>
+                        <div class="my-1 text-center p-2 bg-secondary rounded-pill">Javascript</div>
+                        <div class="my-1 text-center p-2 bg-secondary rounded-pill">CSS Frameworks(Bootstrap)</div>
+                      </p>
+                      <h6 class="card-title my-2">Description</h6>
+                      <p class="card-text">
+                        A simple Portfolio website
+  
+                      </p>
+                      <a href="https://my-portfolio-victor.netlify.app" class="btn btn-success">Go to Site</a>
+                    </div>
+                  </div>
+                </div>
+  
+  
+  
+  
+  
+  
               </div>
             </div>
   
           </div>
+  
+          <!-- Web App -->
+  
+  
           <div class="tab-pane fade" id="pills-webapp" role="tabpanel" aria-labelledby="pills-webapp-tab" tabindex="0">
   
             <div class="container">
@@ -303,6 +393,8 @@
                   </div>
                 </div>
   
+  
+  
                 <div class="col-sm-12 col-lg-6 my-3">
                   <!-- <div class="card border-0">
                     <div id="web-app-one" class="carousel slide m-2" data-bs-ride="carousel">
@@ -344,8 +436,17 @@
   
             </div>
           </div>
+  
+  
+          <!-- Python Projects -->
+  
+  
           <div class="tab-pane fade" id="pills-python-projects" role="tabpanel"
             aria-labelledby="pills-python-projects-tab" tabindex="0">...</div>
+  
+  
+            <!-- New Projects -->
+  
   
           <div class="tab-pane fade" id="pills-new-projects" role="tabpanel" aria-labelledby="pills-new-projects-tab"
             tabindex="0">
@@ -388,20 +489,29 @@
   
   
       </section>
+  
+  
+  
+  
+  
+  <!-- CONTACTS -->
+  
+  
+  
       <section id="contacts" class="my-5 container-xl">
-        <h2 class="text-center">CONTACTS</h2>
+        <h2 class="animated text-center" data-animation="tracking-in-contract-bck">CONTACTS</h2>
         <div class="d-flex justify-content-center align-items-center mt-3">
-          <div class="border rounded-pill w-25 text-center">
-            <a class="" href="https://wa.me/+79038030953"><i class="bi bi-whatsapp text-primary"></i></a>
+          <div class=" text-center">
+            <a class=" px-5 border rounded-pill" href="https://wa.me/+79038030953"><i class="bi bi-whatsapp text-primary"></i></a>
           </div>
-          <div class="border rounded-pill w-25 text-center">
-            <a href="mailto: victorjcdon@gmail.com"><i class="bi bi-envelope-at-fill text-secondary"></i></a>
+          <div class=" text-center">
+            <a class=" px-5 border rounded-pill" href="mailto: victorjcdon@gmail.com"><i class="bi bi-envelope-at-fill text-secondary"></i></a>
           </div>
-          <div class="border rounded-pill w-25 text-center">
-            <a class="" href="tel: +79038030953"><i class="bi bi-telephone text-success"></i></a>
+          <div class=" text-center">
+            <a class=" px-5 border rounded-pill" href="tel: +79038030953"><i class="bi bi-telephone text-success"></i></a>
           </div>
-          <div class="border rounded-pill w-25 text-center">
-            <a class="" href="tg://resolve?domain=Jcvic"><i class="bi bi-telegram text-primary"></i></a>
+          <div class=" text-center">
+            <a class=" px-5 border rounded-pill" href="tg://resolve?domain=Jcvic"><i class="bi bi-telegram text-primary"></i></a>
           </div>
         </div>
       </section>
