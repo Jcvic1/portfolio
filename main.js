@@ -58,29 +58,3 @@ animateElements.forEach(animate => {
 
 
 
-// Animation control scroll to view loop
-
-const animateElementsLoop = document.querySelectorAll('.animated');
-
-const playAnimation = (animate) => {
-  const animation = animate.getAttribute('data-animation');
-  animate.classList.add('animate', animation);
-};
-
-const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.5
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      playAnimation(entry.target);
-    }
-  });
-}, observerOptions);
-
-animateElementsLoop.forEach((animate) => {
-  observer.observe(animate);
-});
